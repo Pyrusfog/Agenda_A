@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResumeContato"
+    android:padding="20dp"
+    android:background="@color/Gainsboro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:strokeColor="@color/Gainsboro"
+            android:src="@drawable/ic_round_account_circle_24"
+            android:id="@+id/img_resume"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/name_resume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingRight="5dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/sobrenome_resume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sobrenome"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingRight="5dp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/resume_empresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Empresa"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp">
+        <Button
+            android:id="@+id/btn_message"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_input"
+            app:icon = "@android:drawable/sym_action_email"
+            android:text="Message"
+            app:iconSize ="40dp"
+            android:layout_weight="1"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            />
+        <Button
+            android:id="@+id/btn_call"
+            android:text="call"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_input"
+            app:icon = "@android:drawable/ic_menu_call"
+            app:iconSize ="30dp" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:background="@drawable/custom_input">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celular"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:paddingLeft="17dp"
+        android:paddingTop="10dp" />
+    <TextView
+        android:id="@+id/number_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(92) 99148-7184"
+        android:textColor="@color/blue"
+        android:paddingLeft="17dp"/>
+</LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/custom_input">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="10dp"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            />
+        <TextView
+            android:id="@+id/email_resume"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/blue"
+            android:textSize="12dp"
+            android:paddingLeft="17dp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_weight="1"/>
+    <Button
+        android:background="@drawable/custom_input"
+        android:id="@+id/btn_edit_contato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar contato"
+        android:layout_gravity="bottom"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+    <Button
+        android:background="@drawable/custom_input"
+        android:id="@+id/btn_deletar_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deletar Contato"
+        />
+</LinearLayout>
